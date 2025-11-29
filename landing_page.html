@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Web site</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="menu_toggle.css" />
+  </head>
+  <body>
+    <nav class="topheader">
+      <a href="" class="logo">
+        <img width="" height="" src="imagen_logo/download (1).png" alt="" />
+      </a>
+       <!-- BOTÓN HAMBURGUESA -->
+
+   <button class="menu-toggle" aria-label="Abrir menú">
+
+    &#9776;
+
+    <!-- Ícono de hamburguesa -->
+
+   </button>
+      <ul class="Menu-Horizontal">
+        <li><a href="">Promociones</a></li>
+        <li>
+          <a href="">Soluciones</a>
+          <ul class="Menu-Vertical">
+            <li><a href="">Servicios financieros</a></li>
+            <li><a href="">Seguros</a></li>
+            <li><a href="">Devoluciones</a></li>
+            <li><a href="">Mundo diners</a></li>
+          </ul>
+        </li>
+        <li><a href="">Privilegios</a></li>
+        <li><a href="">Canales</a></li>
+        <li><a href="#contactanos">Contactanos</a></li>
+      </ul>
+    </nav>
+    <!--Formulario-->
+    <section class="seccion-formulario" id="contactanos">
+      <div class="div-cont-formulario">
+        <h2>Formulario de Registro</h2>
+        <p>Complete todos los campos</p>
+        <form class="Formulario">
+          <!--DIV1-INPUT=TEXT-->
+          <div class="Campo">
+            <label for="nombre">Nombres Completos:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese sus nombres"
+            />
+          </div>
+          <!--DIV2-LISTA DESPEGABLE-->
+          <div class="Campo">
+            <label form="nombre">Pais:</label>
+            <select id="pais" name="pais">
+              <option value="">Seleccione un pais</option>
+              <option value="peru">Peru</option>
+              <option value="argentina">Argentina</option>
+              <option value="brasil">Brasil</option>
+            </select>
+          </div>
+          <!--DIV3-CHECKBOX-->
+          <div class="Campo">
+            <label>Intereses:</label>
+            <ul class="lista-checkbox">
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="Intereses"
+                    value="Politica"
+                  />Politica</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="Intereses"
+                    value="Religion"
+                  />Religion</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="Intereses"
+                    value="Economia"
+                  />Economia</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="Intereses"
+                    value="Costumbres"
+                  />Costumbres</label
+                >
+              </li>
+            </ul>
+          </div>
+          <!--DIV4-RADIO-->
+          <div class="Campo">
+            <label>Sexo:</label>
+            <ul class="lista-radio">
+              <li>
+                <label
+                  ><input type="radio" name="sexo" value="m" />Masculino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="sexo" value="f" />Femenino</label
+                >
+              </li>
+            </ul>
+          </div>
+          <button input type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+    <script src="menu_toggle.js"></script>
+  </body>
+</html>
